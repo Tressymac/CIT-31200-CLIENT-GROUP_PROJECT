@@ -18,7 +18,7 @@ body {
 nav {
     /* Pick a color scheme. This color is temporary */
     width: 100%;
-    height: 50px;
+    height: 9%;
     background-color: white;
     position: absolute;
     top: 0px;
@@ -45,23 +45,74 @@ a {
 
 article {
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     border-radius: 10px;
     padding: 5px;
     width: 500px;
     height: 300px;
-    top: 25%;
-    left: 8%;
+    /* top: 25%; */
+    /* display: flex; */
+    /* left: 8%; */
 }
 
 aside {
     background-color: white;
-    position: relative;
+    /* position: relative; */
     border-radius: 10px;
+    margin-bottom: 4%;
     padding: 5px;
-    margin: 10px;
+    /* margin: 10px; */
     width: 500px;
-    height: 145px;
-    top: 24%;
-    left: 55%;
+    height: 245px;
+    /* top: 24%;
+    left: 55%; */
 }
+
+.container{
+display: flex;
+position: relative;
+top: 15%;
+margin-left: 5%;
+}
+
+.asideBox{
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+     }
+     
+
+    article{
+        width: 70%;
+        height: 500px;
+    }
+
+    aside{
+        width: 70%;
+        height: 400px;
+        margin-left: 10%;
+        margin-top: 15%;
+    }
+
+    nav {
+        height: 23%;
+    }
+
+    .Navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+     }
+     
+}
+  
