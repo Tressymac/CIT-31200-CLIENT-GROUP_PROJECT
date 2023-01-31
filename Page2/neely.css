@@ -31,9 +31,11 @@
 
 .main-area {
 
-  border: 4px solid rgb(51, 127, 241);
+  border: 4px solid rgb(129, 107, 7);
 
   background-color: rgb(235, 207, 132);
+
+  padding: 20px;
 
 
 }
@@ -86,11 +88,7 @@
 
 }
 
-h2 {
 
-  font-size: large;
-
-}
 
 .card-content p {
 
@@ -130,12 +128,17 @@ h3,ul {
 
 }
 
+h3 {
 
+  font-size: x-large;
+  color: rgb(9, 31, 71);
 
-ul {
-  list-style-image: url("viking.png");
+}
 
-
+h3::before{
+  content: "\02600";
+    font-size: x large;
+    color:rgb(226, 209, 54);
 }
 
 [status="important"] {
@@ -144,7 +147,16 @@ ul {
 
 }
 
+.flip-card-back h1{
+  font-weight: bold;
+  color:black;
+  font-size: x-large;
+}
 
+span {
+  font-weight: bold;
+  font-size: large;
+}
 /*Flip card style*/
 .flip-card {
   background-color: transparent;
