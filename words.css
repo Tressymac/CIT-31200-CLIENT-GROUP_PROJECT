@@ -54,6 +54,7 @@
     width: 80%;
     height: 150px;
     border-radius: 15px;
+    object-fit: cover;
   }
   
   h3,ul {
