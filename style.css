@@ -82,7 +82,7 @@ main {
 }
 
 section.home {
-    height: 500px;
+    min-height: 500px;
     display: grid;
     grid-template-areas:
         "main info"
