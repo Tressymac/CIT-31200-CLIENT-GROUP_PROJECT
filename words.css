@@ -1,0 +1,132 @@
+.masthead {
+    padding: 20px;
+    font-size: x-large;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    color: var(--black);
+  }
+  
+.site-title {
+    text-align: center;
+}
+     
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 5px;
+}
+  
+  /* .card {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    max-height: 30px;
+    flex: 1 1 200px;
+    position: relative; /* to position items inside card */
+  
+  
+  .card a {
+    color: var(--black);
+    text-decoration: none;
+  }
+   
+  .card-content {
+    padding: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+  }
+  
+  
+  
+  .card-content p {
+    font-size: 80%;
+    font-weight: bolder;
+  }
+  
+  .pixHolder {
+    text-align: center;
+    background-color: var(--orange);
+  }
+  
+  .pixHolder img {
+    padding-top: 5px;
+    width: 80%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  
+  h3,ul {
+    position: relative;
+    top: -10px;
+  }
+  
+  h3 {
+    font-size: x-large;
+    color: var(--black);
+  }
+  
+  h3::before{
+    content: "\02600";
+    font-size: x-large;
+    color: var(--orange);
+  }
+  
+  [status="important"] {
+    border: 6px dashed var(--black);
+  }
+  
+  .flip-card-back h1{
+    font-weight: bold;
+    color: var(--black);
+    font-size: x-large;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: large;
+  }
+
+  /*Flip card style*/
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 1rem;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: var(--white);
+    color: var(--black);
+  }
+  
+  .flip-card-back {
+    background-color: var(--light-blue);
+    border: 5px solid var(--black);
+    color: var(--black);
+    transform: rotateY(180deg);
+  }
