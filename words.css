@@ -17,14 +17,6 @@
     padding: 5px;
 }
   
-  /* .card {
-    margin-bottom: 2em;
-    margin-top: 2em;
-    max-height: 30px;
-    flex: 1 1 200px;
-    position: relative; /* to position items inside card */
-  
-  
   .card a {
     color: var(--black);
     text-decoration: none;
@@ -57,11 +49,7 @@
     object-fit: cover;
   }
   
-  h3,ul {
-    position: relative;
-    top: -10px;
-  }
-  
+ 
   h3 {
     font-size: x-large;
     color: var(--black);
