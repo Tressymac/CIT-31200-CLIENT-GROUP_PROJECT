@@ -172,7 +172,7 @@ margin-left: 5%;
      }
 
      section.home {
-        height: 500px;
+        height: fit-content;
         display: grid;
         grid-template-areas:
             "main"
