@@ -10,7 +10,6 @@ margin: 0;
 colors easier! To call for a color, use it like
 background-color: var(--blue) or
 border: 5px solid var(--brown); 
-
 This ensures consistency in design and makes updating
 colors a lot easier on us */
 :root {
@@ -151,7 +150,6 @@ margin-left: 5%;
         width: 70%;
         height: 500px;
     }
-
     aside{
         width: 70%;
         height: 400px;
@@ -182,6 +180,4 @@ margin-left: 5%;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1rem;
     }
-     
 }
-  

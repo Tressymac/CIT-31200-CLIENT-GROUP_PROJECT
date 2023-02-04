@@ -1,0 +1,6 @@
+-- Edited index.html to include words.html link, and to match template of words.html
+-- Edited css to include root variables for color to make it easier to stylize
+-- Edited css to be more mobile friendly; switched to a grid layout instead of relying on positioning
+-- Made words.html and words.css more mobile friendly; added flexbox
+-- Commented out images
+-- Defined following words: arctic, attitude, attract, average, avoid
