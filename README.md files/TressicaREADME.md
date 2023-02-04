@@ -1,6 +1,7 @@
 # Tressica Mac
 
-WORDS: Active, Actual, Adopt, Advantage, Advice
-Our group initially met on Wednesday at 1:30 to discuss theme, layout, and word division.
-Individually, we created our cards. We are meeting again today (Friday) to merge files and submit. 
-I created my five cards along with their definitions, example, and image. Then I created a branch on our Repo, and pushed my files to my branch. 
+WORDS: Ambition, Ancient, Approach, Arrange
+* We met via zoom three times this week to plan out the project
+* I filled in the information for the four words above 
+* I Ensured that all of our branches were up-to-date
+* I pushed the final file to the main branch 
