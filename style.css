@@ -6,12 +6,6 @@ padding: 0;
 margin: 0;
 }
 
-/* These are variables to make using repeated
-colors easier! To call for a color, use it like
-background-color: var(--blue) or
-border: 5px solid var(--brown); 
-This ensures consistency in design and makes updating
-colors a lot easier on us */
 :root {
     --blue: rgb(15, 101, 128);
     --light-blue: rgb(168, 213, 207);
@@ -56,9 +50,11 @@ nav a:hover {
 
 .logo {
     width: 40px;
+    display: flex;
     height: 40px;
     background-color: var(--light-blue);
     position: relative;
+    justify-content: center;
 }
 
 a {
@@ -93,28 +89,15 @@ section.home {
 
 section.home article {
     background-color: var(--white);
-    /* position: absolute; */
     border-radius: 10px;
     padding: 5px;
-    /* width: 500px;
-    height: 300px; */
     grid-area: main;
-    /* top: 25%; */
-    /* display: flex; */
-    /* left: 8%; */
 }
 
 section.home aside {
     background-color: var(--white);
-    /* position: relative; */
     border-radius: 10px;
-    /* margin-bottom: 4%; */
     padding: 5px;
-    /* margin: 10px; */
-    /* width: 500px;
-    height: 245px; */
-    /* top: 24%;
-    left: 55%; */
 }
 
 section.home aside.info {
@@ -125,17 +108,6 @@ section.home aside.other-info {
     grid-area: other-info;
 }
 
-/* .container{
-display: flex;
-position: relative;
-top: 15%;
-margin-left: 5%;    
-} */
-
-/* .asideBox{
-    margin-left: 5%;
-} */
-
 @media screen and (max-width: 1000px) {
     main {
         flex-direction: column;
@@ -143,19 +115,7 @@ margin-left: 5%;
         align-content: center;
         justify-content: center;
         align-items: center;
-     }
-     
-
-    /* article{
-        width: 70%;
-        height: 500px;
     }
-    aside{
-        width: 70%;
-        height: 400px;
-        margin-left: 10%;
-        margin-top: 15%;
-    } */
 
     nav {
         justify-content: space-between;
@@ -167,7 +127,7 @@ margin-left: 5%;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-     }
+    }
 
      section.home {
         height: fit-content;
