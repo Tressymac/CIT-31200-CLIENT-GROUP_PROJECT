@@ -1,0 +1,56 @@
+section.week {
+    min-height: 500px;
+    display: grid;
+    grid-template-areas:
+        "main info"
+        "main other-info";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+section.week article {
+    grid-area: main;
+}
+
+section.week aside.info {
+    grid-area: info;
+}
+
+section.week aside.other-info {
+    grid-area: other-info;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .Navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+     section.week {
+        height: fit-content;
+        display: grid;
+        grid-template-areas:
+            "main"
+            "info"
+            "other-info";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
