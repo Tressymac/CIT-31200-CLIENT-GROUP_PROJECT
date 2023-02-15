@@ -5,6 +5,10 @@
     position: relative;
     color: var(--black);
   }
+
+  .flip-card {
+    padding: 0;
+  }
   
 .site-title {
     text-align: center;
