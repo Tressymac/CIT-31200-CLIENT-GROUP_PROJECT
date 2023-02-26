@@ -42,7 +42,6 @@
   
   .pixHolder {
     text-align: center;
-    background-color: var(--orange);
   }
   
   .pixHolder img {
@@ -60,9 +59,9 @@
   }
   
   h3::before{
-    content: "\02600";
+    content: "\02600   ";
     font-size: x-large;
-    color: var(--orange);
+    color: var(--brown);
   }
   
   [status="important"] {
@@ -118,7 +117,7 @@
   }
   
   .flip-card-back {
-    background-color: var(--light-blue);
+    background-color: var(--light-gray);
     border: 5px solid var(--black);
     color: var(--black);
     transform: rotateY(180deg);
