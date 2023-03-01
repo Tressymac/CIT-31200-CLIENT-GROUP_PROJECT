@@ -1,0 +1,138 @@
+*::before,
+*::after {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+:root {
+    --white: #f1f1f1;
+    --light-gray: #cccccc;
+    --black: #231e24;
+    --brown: #7c6e53;
+    --pale-orange: #f0c26a;
+}
+
+@MtvermColor: #f0c26a;
+
+body{
+    background-color: @MtvermColor;
+}
+
+//Navigation style 
+nav {
+    background-color: var(--black);
+    border-bottom: 4px solid var(--brown);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav .nav-container {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+    transform: translateY(-105%);
+    transition: transform 0.1s ease;
+    box-shadow: -5px 0px 3px rgba(0,0,0,0.25);
+}
+
+.nav-container:target {
+    transform: translateY(0);
+}
+
+.hamburger,
+nav .close {
+    display: block;
+    font-size: 2rem;
+}
+
+nav .close {
+    margin: 1rem;
+}
+
+.nav-container .close {
+    align-self: self-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
+}
+
+nav li {
+    margin: 1.5rem 0;
+}
+
+.nav-active {
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--white);
+}
+
+nav a:hover {
+    color: var(--light-gray);
+}
+
+.logo {
+    width: 40px;
+    display: flex;
+    height: 40px;
+    background-color: var(--light-gray);
+    position: relative;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+    nav {
+        width: 100%;
+        height: auto;
+        transform: translateY(0);
+        justify-content: space-between;
+    }
+    nav,
+    nav ul {
+        flex-direction: row;
+    }
+    nav .nav-container {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        position: relative;
+        transform: translateY(0);
+        flex-direction: row;
+        box-shadow: none;
+    }
+    .hamburger,
+    nav .close {
+        display: none;
+    }
+    nav li {
+        margin: 0 1.5rem;
+    }
+}
+
