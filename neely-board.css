@@ -59,7 +59,7 @@
   }
   
   h3::before{
-    content: "\02600   ";
+    content: "\02600";
     font-size: x-large;
     color: var(--brown);
   }

@@ -10,6 +10,7 @@ margin: 0;
     --white: #f1f1f1;
     --light-gray: #cccccc;
     --black: #231e24;
+    --orange: rgb(246, 178, 18);
 
     --brown: #7c6e53;
     /* --orange: rgb(235, 104, 16); */
@@ -91,8 +92,9 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--light-gray);
+    color: var(--orange);
 }
+
 
 .logo {
     width: 40px;
@@ -108,14 +110,6 @@ a {
     color: var(--black);
     position: relative;
 }
-
-/* main {
-    min-height: 100vh;
-    border: 4px solid var(--brown);
-    border-top: 0px;
-    background-color: var(--yellow);
-    padding: 20px;
-} */
 
 main {
     min-height: 100vh;
@@ -210,4 +204,88 @@ section.home article h3 {
     nav li {
         margin: 0 1.5rem;
     }
+
 }
+
+@keyframes glowing {
+
+    25%{
+        color: rgb(17, 17, 16);
+    }
+
+    50% {
+      color: rgb(39, 64, 100);
+      
+    }
+    100% {
+      color:#435e36;
+     
+    }
+  }
+
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5%;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.box > div{
+
+    margin: 30px;
+}
+
+div h2::before{
+    content: "\02600";
+    font-size: x-large;
+    color: black;
+    
+  }
+  
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: glowing 3s infinite;   
+
+}
+
+.box h2{
+    padding-top: 40%;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(45, 167, 96);
+    margin-right: 50px;
+    border-radius: 20px;
+    border: dashed 5px #231e24;
+    position:relative;
+    box-shadow: 5px 5px rgb(74, 177, 172);
+    font-size: large;
+    /* animation: glowing 3s infinite;     */
+     
+}
+
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+    background-color: #e9b72d;
+
+}
+
+.box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover, .box5 a:hover{
+
+    color: rgb(114, 37, 14);
+
+}
+
+
+
