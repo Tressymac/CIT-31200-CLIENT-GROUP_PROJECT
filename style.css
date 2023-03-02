@@ -228,7 +228,7 @@ section.home article h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5%;
+    margin: 1%;
     padding: 10px;
     text-align: center;
     justify-content: space-between;
@@ -236,8 +236,7 @@ section.home article h3 {
 }
 
 .box > div{
-
-    margin: 30px;
+   margin: 30px;
 }
 
 div h2::before{
@@ -255,6 +254,20 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: glowing 3s infinite;   
 
+}
+
+.definition {
+padding: 20px;
+height: 150px;
+width: 500px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+background-color: #7b97ec;
+margin: auto;
+border-radius: 20px;
+border: dashed 3px black;
+box-shadow: 5px 5px rgb(23, 69, 84);
 }
 
 .box h2{
