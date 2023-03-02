@@ -43,7 +43,6 @@ body{
 }
 
 .button-19 {
-  appearance: button;
   background-color: @greenColor;
   border: solid transparent;
   border-radius: 16px;
@@ -88,11 +87,6 @@ body{
   right: 0;
   top: 0;
   z-index: -1;
-}
-
-.button-19:main,
-.button-19:focus {
-  user-select: auto;
 }
 
 .button-19:hover:not(:disabled) {
@@ -174,8 +168,9 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--light-gray);
+    color: var(--orange);
 }
+
 
 .logo {
     width: 40px;
@@ -191,7 +186,6 @@ a {
     color: var(--black);
     position: relative;
 }
-
 // Page Heading 
 .top-container{
     margin-top: 3%;
@@ -256,8 +250,13 @@ a {
   }
   
 .flip-card-front {
-    background-color: #bbb;
+    background-color: #e2d89e;
+    border: #231e24 dashed 3px;
     color: black;
+    display: @PageContent;
+    flex-direction: @contentColumn;
+    align-items: @contentCenter;
+    justify-content: @contentCenter;
     border-radius: 5%;
 }
   
@@ -266,6 +265,21 @@ a {
     color: white;
     transform: rotateY(180deg);
     border-radius: 5%;
+    border: #231e24 dashed 3px;
+}
+
+.flipCardHead{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    margin-top: 5%;
+}
+
+.flipCardText{
+    font-family: @fontFamily;
+    margin-top: 5%;
+    font-size: x-large;
 }
 
 // Bottom Container style
@@ -274,10 +288,91 @@ a {
     flex-direction: @contentColumn;
     flex-wrap: @contentWrap;
     align-items: @contentCenter;
+    margin-top: 3%;
 }
 
 .exampleTitle{
-    
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+.exampleHolder{
+    height: fit-content;
+    background-color: #7e561ac0;
+    width: 600px;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    border: #231e24 solid 4px;
+    border-radius: 10px;
+}
+
+// Example box
+.videoHeader{
+    display: @PageContent;
+    align-items: @contentCenter;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.poemHeader{
+    display: @PageContent;
+    align-items: @contentCenter;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+h3{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 5px;
+}
+
+.videoBody{
+    position: relative;
+    margin-left: 10%;
+    border: #231e24 solid 2px;
+    background-color: #231e24;
+    width: 70%;
+}
+
+// Poem box 
+.peom{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: fit-content;
+    background-color: #fdfbe3;
+    border: #231e24 solid 4px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.peom h4{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.peom p {
+    font-family: @fontFamily;
+}
+
+// hiding the poem boxes
+.poemBox3, .poemBox4, .poemBox2{
+    display: none;
+}
+
+// Image style
+.wordImage{
+    height: 250px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -307,5 +402,6 @@ a {
     nav li {
         margin: 0 1.5rem;
     }
+
 }
 
