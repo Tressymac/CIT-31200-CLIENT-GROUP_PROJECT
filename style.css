@@ -282,10 +282,13 @@ box-shadow: 5px 5px rgb(23, 69, 84);
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .definition {
         width: 100%;
         height: fit-content;
+    }
+    .box {
+        justify-content: center;
     }
 }
 
