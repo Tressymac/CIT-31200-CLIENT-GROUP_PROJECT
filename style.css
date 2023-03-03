@@ -159,25 +159,6 @@ section.home article h3 {
     line-height: 150%;
 }
 
-
-@media screen and (max-width: 800px) {
-    /* main {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    /* .Navigation {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-    } */
-}
-
 @media screen and (min-width: 1000px) {
     nav {
         width: 100%;
@@ -300,6 +281,16 @@ box-shadow: 5px 5px rgb(23, 69, 84);
     color: rgb(114, 37, 14);
 
 }
+
+@media screen and (max-width: 450px) {
+    .definition {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+
+
 
 
 
