@@ -1,0 +1,54 @@
+@import url(./variables.less);
+@import url(./nav.less);
+@import url(./figurative-language.less);
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: @MtVernColor;
+}
+
+.container{
+    display: @PageContent;
+    flex-direction: @contentColumn;
+    flex-wrap: @contentWrap;
+    align-items: @contentCenter;
+}
+
+.logo {
+    width: 40px;
+    display: flex;
+    height: 40px;
+    background-color: @light-gray;
+    position: relative;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: @black;
+    position: relative;
+}
+
+main {
+    min-height: 100vh;
+    border: 4px solid @brown;
+    border-top: 0px;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: min(95%, 900px);
+    margin: auto;
+}

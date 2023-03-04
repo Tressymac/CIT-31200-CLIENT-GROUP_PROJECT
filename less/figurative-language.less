@@ -1,0 +1,295 @@
+@import url(./variables.less);
+
+// Page Heading 
+.top-container{
+    margin-top: 3%;
+    display: @PageContent;
+    flex-direction: @contentColumn;
+    flex-wrap: @contentWrap;
+    align-items: @contentCenter;
+}
+
+.Title{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: xx-large;
+    letter-spacing: 5px;
+}
+
+.Line{
+    border-top: @black solid 3px;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+// Flip card 
+.FlipCardContainer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cards{
+    border-radius: 5%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 5%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front {
+    background-color: @pale-yellow;
+    border: @black dashed 3px;
+    color: @black;
+    display: @PageContent;
+    flex-direction: @contentColumn;
+    align-items: @contentCenter;
+    justify-content: @contentCenter;
+    border-radius: 5%;
+}
+  
+.flip-card-back {
+    background-color: @greenColorShawdow;
+    color: @white;
+    transform: rotateY(180deg);
+    border-radius: 5%;
+    border: @black dashed 3px;
+}
+
+.flipCardHead{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    margin-top: 5%;
+}
+
+.flipCardText{
+    font-family: @fontFamily;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+// Bottom Container style
+.bottom-container{
+    display: @PageContent;
+    flex-direction: @contentColumn;
+    flex-wrap: @contentWrap;
+    align-items: @contentCenter;
+    margin-top: 3%;
+}
+
+.exampleTitle{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+.exampleHolder{
+    height: fit-content;
+    background-color: @brown;
+    width: 600px;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    border: @black solid 4px;
+    border-radius: 10px;
+}
+
+// Example box
+.videoHeader{
+    display: @PageContent;
+    align-items: @contentCenter;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.poemHeader{
+    display: @PageContent;
+    align-items: @contentCenter;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+h3{
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 5px;
+}
+
+.videoBody{
+    position: relative;
+    margin-left: 10%;
+    border: @black solid 2px;
+    background-color: @black;
+    width: 70%;
+}
+
+// Poem box 
+.peom{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: fit-content;
+    background-color: @pale-yellow;
+    border: @black solid 4px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.peom h4{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: @fontFamily;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.peom p {
+    font-family: @fontFamily;
+}
+
+// hiding the poem boxes
+.poemBox3, .poemBox4, .poemBox2{
+    display: none;
+}
+
+// Image style
+.wordImage{
+    height: 250px;
+}
+
+// buttons
+.buttons{
+    display: @PageContent;
+    width: 70px;
+}
+
+.button-19 {
+  background-color: @greenColor;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: @white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: .2px;
+  line-height: 20px;
+  margin: 0;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 200px;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: @greenColorShawdow;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+@media screen and (max-width: 560px) {
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1%;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .exampleHolder {
+        width: 100%;
+    }
+
+    .top-container {
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-container {
+        margin-right: 0%;
+    }
+    .bottom-container {
+        align-items: flex-start;
+    }
+    .exampleHolder {
+        width: 100%;
+    }
+    .poemHeader {
+        display: grid;
+        margin-left: 0%;
+    }
+    .button-19{
+        padding: 13px 14px;
+    }
+    .Title{
+        letter-spacing: 0px;
+    }
+
+}
